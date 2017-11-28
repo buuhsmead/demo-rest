@@ -5,7 +5,7 @@ metadata:
 spec:
   source:
     git:
-      uri: https://github.com/dsanchor/demo-cicd
+      uri: https://github.com/buuhsmead/demo-cicd
   strategy:
     jenkinsPipelineStrategy:
       jenkinsfilePath: pipeline/Jenkinsfile
@@ -13,9 +13,9 @@ spec:
         - name: JENKINS_PROJECT
           value: cicd
         - name: CICD_GIT_URL
-          value: https://github.com/dsanchor/demo-cicd
+          value: https://github.com/buuhsmead/demo-cicd
         - name: APP_GIT_URL
-          value: https://github.com/dsanchor/demo-rest
+          value: https://github.com/buuhsmead/demo-rest
         - name: APP_TEMPLATE
           value: openshift/templates/demo-rest-template.yml
         - name: APP_NAME
@@ -23,33 +23,33 @@ spec:
 #        - name: CUSTOM_TEMPLATE_PARAMETERS
 #          value: "-p YOUR_PARAM1=x p YOUR_PARAM2=y"
         - name: IMAGESTREAM_PROJECT
-          value: dsancho-dev
+          value: buuhsmead-dev
         - name: DEV_PROJECT
-          value: dsancho-dev
+          value: buuhsmead-dev
         - name: TEST_PROJECT
-          value: dsancho-test
+          value: buuhsmead-test
         - name: TEST_TAG
           value: test
         - name: PROD_PROJECT
-          value: dsancho-prod
+          value: buuhsmead-prod
         - name: PROD_TAG
           value: production
         - name: SONAR_URL
-          value: http://sonarqube-cicd.apps.d-sancho.com 
+          value: http://sonarqube-cicd.ocp.it-speeltuin.net/
         - name: NEXUS_URL
 #          value: http://nexus-devops.192.168.99.100.nip.io
-          value: http://nexus-cicd.apps.d-sancho.com
+          value: http://nexus-cicd.ocp.it-speeltuin.net/
         - name: NEXUS_RELEASE_REPOSITORY
           value: /nexus/content/repositories/releases
         - name: POSTMAN_TESTS_COLLECTION
-          value: "https://raw.githubusercontent.com/dsanchor/demo-rest/master/openshift/tests/demo-rest.postman_collection.json"
+          value: "https://raw.githubusercontent.com/buuhsmead/demo-rest/master/openshift/tests/demo-rest.postman_collection.json"
         - name: POSTMAN_DEV_ENVIRONMENT_CONFIG
-          value: "https://raw.githubusercontent.com/dsanchor/demo-rest/master/openshift/tests/environments/development.postman_environment.json"
+          value: "https://raw.githubusercontent.com/buuhsmead/demo-rest/master/openshift/tests/environments/development.postman_environment.json"
         - name: POSTMAN_TEST_ENVIRONMENT_CONFIG
-          value: "https://raw.githubusercontent.com/dsanchor/demo-rest/master/openshift/tests/environments/test.postman_environment.json"
+          value: "https://raw.githubusercontent.com/buuhsmead/demo-rest/master/openshift/tests/environments/test.postman_environment.json"
         - name: POSTMAN_ALTPROD_ENVIRONMENT_CONFIG
-          value: "https://raw.githubusercontent.com/dsanchor/demo-rest/master/openshift/tests/environments/production-alternate.postman_environment.json"
+          value: "https://raw.githubusercontent.com/buuhsmead/demo-rest/master/openshift/tests/environments/production-alternate.postman_environment.json"
         - name: POSTMAN_PROD_ENVIRONMENT_CONFIG
-          value: "https://raw.githubusercontent.com/dsanchor/demo-rest/master/openshift/tests/environments/production.postman_environment.json"
+          value: "https://raw.githubusercontent.com/buuhsmead/demo-rest/master/openshift/tests/environments/production.postman_environment.json"
 
 

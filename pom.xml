@@ -25,9 +25,9 @@
  	</properties>
 
 	<scm>
-		<url>https://github.com/dsanchor/demo-rest</url>
-		<connection>scm:git:https://github.com/dsanchor/demo-rest.git</connection>
-		<developerConnection>scm:git:https://github.com/dsanchor/demo-rest.git</developerConnection>
+		<url>https://github.com/buuhsmead/demo-rest</url>
+		<connection>scm:git:https://github.com/buuhsmead/demo-rest.git</connection>
+		<developerConnection>scm:git:https://github.com/buuhsmead/demo-rest.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
