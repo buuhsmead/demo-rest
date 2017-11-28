@@ -35,10 +35,10 @@ spec:
         - name: PROD_TAG
           value: production
         - name: SONAR_URL
-          value: http://sonarqube-cicd.apps.127.0.0.1.nip.io/
+          value: http://sonarqube.cicd.svc:9000/
         - name: NEXUS_URL
 #          value: http://nexus-devops.192.168.99.100.nip.io
-          value: http://nexus-cicd.apps.127.0.0.1.nip.io/
+          value: http://nexus.cicd.svc:8081/
         - name: NEXUS_RELEASE_REPOSITORY
           value: /nexus/content/repositories/releases
         - name: POSTMAN_TESTS_COLLECTION
